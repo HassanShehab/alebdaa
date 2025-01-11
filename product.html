@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alebdaa.ae</title>
+    <link rel="icon" href="./Screenshot__158_-1-removebg-preview (1).png">
+</head>
+<body>
+    <img class="head-img" src="./Screenshot__158_-1-removebg-preview (1).png" alt="alebdaa-logo">
+    <div id='product-component-1736591716914'></div>
+    <style>
+        .head-img{
+            width: 150px;
+            height: 70px;
+            display: block;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+    </style>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'alebdaa.myshopify.com',
+      storefrontAccessToken: 'c01d56374ccfb31ecfe10ada90f6c2e3',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '10021401428279',
+        node: document.getElementById('product-component-1736591716914'),
+        moneyFormat: 'AED%20%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        },
+        "text-align": "left"
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "button": {
+        "font-family": "Geneva, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#ff0505"
+        },
+        "background-color": "#a70303",
+        ":focus": {
+          "background-color": "#ff0505"
+        },
+        "border-radius": "6px",
+        "padding-left": "61px",
+        "padding-right": "61px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      },
+      "price": {
+        "font-family": "Open Sans, sans-serif",
+        "font-size": "18px",
+        "color": "#00b31b"
+      },
+      "compareAt": {
+        "font-family": "Open Sans, sans-serif",
+        "font-size": "15.299999999999999px",
+        "color": "#00b31b"
+      },
+      "unitPrice": {
+        "font-family": "Open Sans, sans-serif",
+        "font-size": "15.299999999999999px",
+        "color": "#00b31b"
+      }
+    },
+    "buttonDestination": "checkout",
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true,
+      "description": true
+    },
+    "width": "100%",
+    "text": {
+      "button": "أشتري الأن "
+    },
+    "googleFonts": [
+      "Open Sans"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Geneva, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#ff0505"
+        },
+        "background-color": "#a70303",
+        ":focus": {
+          "background-color": "#ff0505"
+        },
+        "border-radius": "6px",
+        "padding-left": "61px",
+        "padding-right": "61px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      },
+      "title": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold",
+        "font-size": "26px",
+        "color": "#4c4c4c"
+      },
+      "price": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "18px",
+        "color": "#4c4c4c"
+      },
+      "compareAt": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "unitPrice": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Geneva, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#ff0505"
+        },
+        "background-color": "#a70303",
+        ":focus": {
+          "background-color": "#ff0505"
+        },
+        "border-radius": "6px"
+      }
+    },
+    "text": {
+      "title": "عرية التسوق ",
+      "total": "Subtotal",
+      "button": "Checkout"
+    },
+    "popup": false
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Geneva, sans-serif",
+        "background-color": "#a70303",
+        ":hover": {
+          "background-color": "#ff0505"
+        },
+        ":focus": {
+          "background-color": "#ff0505"
+        }
+      },
+      "count": {
+        "font-size": "16px"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+</body>
+</html>
